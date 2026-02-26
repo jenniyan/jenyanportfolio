@@ -13,17 +13,23 @@
   font-style: normal;
 }
 
-
 body {
   background-color: #130c25;
   font-family: "mc-regular";
   letter-spacing: 0.1em;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .room {
   position: relative;
   width: 900px;
-  margin: auto;
+  margin: 100px;
 }
 
 .room img {
@@ -66,7 +72,7 @@ body {
   position: absolute;
   top: 10%;
   left: 55%;
-  background-color: rgba(255, 197, 248, 0.2); /* semi-transparent overlay color */
+  /* background-color: rgba(255, 197, 248, 0.2); semi-transparent overlay color */
   backdrop-filter: blur(10px); /* this is the “Gaussian blur” effect */
   -webkit-backdrop-filter: blur(10px); /* for Safari */
   z-index: 1000; /* make sure it's above content */

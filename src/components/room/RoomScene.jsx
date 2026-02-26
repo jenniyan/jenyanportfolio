@@ -8,6 +8,7 @@ import Bookshelf from "../objects/Bookshelf"
 import Bed from "../objects/Bed"
 
 import ProjectsModal from "../modals/ProjectsModal"
+import ExperienceModal from "../modals/ExperienceModal"
 
 import { usePortfolioUI } from "../hooks/UsePortfolioUI"
 
@@ -19,7 +20,7 @@ export default function RoomScene() {
 
       <RoomBackground />
 
-      <Lectern />
+      <Lectern onClick={() => openModal("experiences")}/>
       <ArmorStand />
       <Stove />
       <Painting />
@@ -28,6 +29,7 @@ export default function RoomScene() {
       <Bed />
 
       <ProjectsModal />
+      <ExperienceModal />
 
     </div>
   )

@@ -1,19 +1,22 @@
-import Modal from "../Modal"
+import { usePortfolioUI } from "../hooks/UsePortfolioUI";
+import pageBg from "../../assets/page.png";
 
-export default function ProjectsModal({ open, close }) {
+const pdfUrl = "https://drive.google.com/file/d/1FdHV_cK4LnuSJB7qKW2FUEzMywO0BAq0/preview" 
+
+export default function ResumeModal() {
+  const { activeModal, closeModal } = usePortfolioUI();
+
+  if (activeModal !== "resume") return null;
 
   return (
-    <Modal open={open} close={close}>
-
-      <h2>Projects</h2>
-
-      <ul>
-        <li>AI Research Assistant</li>
-        <li>Fullstack Web App</li>
-        <li>React Dashboard</li>
-        <li>Hackathon Projects</li>
-      </ul>
-
-    </Modal>
-  )
+    <div className="modal">
+      <img src={pageBg} className="book" alt="Book background" />
+      <button className="closeButton" onClick={closeModal}>
+        X
+      </button>
+      <div className="page">
+        <iframe src={pdfUrl} width="640" height="480" title="Resume"></iframe>
+      </div>
+    </div>
+  );
 }

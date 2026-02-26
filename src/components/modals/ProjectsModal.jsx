@@ -62,7 +62,7 @@ export default function ProjectsModal() {
         <p>{project.description}</p>
         <p> --- </p>
         <p>
-          <strong>Tech Used:</strong> {project.tech}
+          <strong>Tech Used:</strong> <p>{project.tech}</p>
         </p>
         <div className="controls">
           <button
