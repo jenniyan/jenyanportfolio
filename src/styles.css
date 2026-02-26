@@ -1,5 +1,23 @@
+/* In src/index.css or similar file */
+@font-face {
+  font-family: 'mc'; /* Choose a name for your font */
+  src: url('./fonts/Minecraft.ttf') format('truetype'); /* Include other formats for compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'mc-regular'; /* Choose a name for your font */
+  src: url('./fonts/MinecraftRegular.otf') format('opentype'); /* Include other formats for compatibility */
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   background-color: #130c25;
+  font-family: "mc-regular";
+  letter-spacing: 0.1em;
 }
 
 .room {
@@ -45,14 +63,14 @@ body {
 }
 
 .modal {
-  width: 500px;
   position: absolute;
-  top: 30%;
+  top: 10%;
   left: 55%;
+  background-color: rgba(255, 197, 248, 0.2); /* semi-transparent overlay color */
+  backdrop-filter: blur(10px); /* this is the “Gaussian blur” effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  z-index: 1000; /* make sure it's above content */
   transform: translateX(-50%);
-  background: white;
-  padding: 1.5rem;
+  padding: 0.05rem;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  z-index: 10;        /* above objects */
 }

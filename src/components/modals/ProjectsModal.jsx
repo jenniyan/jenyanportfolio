@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
+import book from "../../assets/book.png";
+import saucynatorCover from "../../assets/saucynator-cover.png";
+import portfolioCover from "../../assets/portfolio-cover.png";
 
 const projects = [
   {
@@ -8,14 +11,16 @@ const projects = [
       "Simple, fun chatbot built with OpenAI’s GPT-3.5 that suggests recipes based on ingredients users already have. Created as an exploratory project to learn prompt design, long-term memory, and experimenting with how we can make cooking feel more approachable for beginners.",
     tech: "Python, Flask, Google Colab, OpenAI API, HTML/CSS/JS front-end",
     demo: "https://www.loom.com/share/1c8b9a0e7c5b4d9f8e1c3a2b6f4e5a6",
-    repo: "https://github.com/jjen-yan/saucynator"
+    repo: "https://github.com/jjen-yan/saucynator",
+    cover: saucynatorCover,
   },
   {
     title: "This Portfolio!",
-    description: "A web app with front-end and back-end features.",
+    description: "A simple web app with front-end features",
     tech: "React, HTML/CSS",
-    demo: "right here! :)",
-    repo: ""
+    demo: "https://www.google.com",
+    repo: "https://github.com/jjen-yan/jenyanportfolio",
+    cover: portfolioCover,
   },
 ];
 
@@ -33,24 +38,53 @@ export default function ProjectsModal() {
 
   return (
     <div className="modal">
-      <button className="close" onClick={closeModal}>
+      <img src={book} className="book" alt="Book background" />
+      <button className="closeButton" onClick={closeModal}>
         X
       </button>
-      <div className="project-content">
-        <h2>{project.title}</h2>
+      <div className="page left">
+        <p className="header">{project.title}</p>
+        <a href={project.demo} target="_blank" rel="noopener noreferrer">
+          {" "}
+          demo
+        </a>{" "}
+        |{" "}
+        <a href={project.repo} target="_blank" rel="noopener noreferrer">
+          repo
+        </a>
+        <img
+          src={project.cover}
+          alt={`${project.title} cover`}
+          className="cover"
+        />
+      </div>
+      <div className="page right">
         <p>{project.description}</p>
-        <p><strong>Tech Used:</strong> {project.tech}</p>
+        <p> --- </p>
+        <p>
+          <strong>Tech Used:</strong> {project.tech}
+        </p>
+        <div className="controls">
+          <button
+            className="prevButton"
+            onClick={prevPage}
+            disabled={page === 0}
+          >
+            Prev
+          </button>
+          <button
+            className="nextButton"
+            onClick={nextPage}
+            disabled={page === projects.length - 1}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+      <div className="pageBottom">
         <p>
           {page + 1} / {projects.length}
         </p>
-      </div>
-      <div className="controls">
-        <button onClick={prevPage} disabled={page === 0}>
-          Prev
-        </button>
-        <button onClick={nextPage} disabled={page === projects.length - 1}>
-          Next
-        </button>
       </div>
     </div>
   );

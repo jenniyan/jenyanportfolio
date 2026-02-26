@@ -1,0 +1,90 @@
+.book {
+  position: relative;
+  width: 900px;
+  margin: auto;
+}
+
+button {
+    background-color: #eedbc1;
+    border: none;
+    font-family: "mc-regular";
+    cursor: pointer;
+    color: #000;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;;
+    border-radius: 5px;
+}
+
+.book img {
+  display: block;
+}
+
+.header {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.cover {
+    margin: 1em 0;
+}
+
+.closeButton {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 7%;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+}
+
+.nextButton {
+    position: absolute;
+    cursor: pointer;
+    right: 0%;
+    bottom: 0%;
+}
+
+.prevButton {
+    position: absolute;
+    cursor: pointer;
+    left: 0%;
+    bottom: 0%;
+}
+
+.left {
+    left: 10%;
+    top: 20%;
+}
+
+.right {
+    left: 54%;
+    top: 20%;
+}
+
+.page {
+  /* outline: 2px solid red; */
+  top: 10%;
+  width: 40%;
+  position: absolute;
+  cursor: pointer;
+  align-items: center;
+  height: 78%
+}
+
+.page img {
+  width: 80%;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  animation: subtleGlow 1.5s ease-in-out infinite;
+}
+
+.pageBottom {
+    bottom: 10%;
+    left: 72%;
+    position: absolute;
+}

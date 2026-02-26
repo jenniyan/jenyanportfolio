@@ -12,8 +12,6 @@ export default function GameObject({
       onClick={onClick}
     >
       <img src={img} alt=""/>
-
-      {label && <div className="tooltip">{label}</div>}
     </div>
   )
 }

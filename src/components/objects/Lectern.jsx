@@ -5,7 +5,7 @@ export default function Lectern({ openExperience }) {
   return (
     <GameObject
       img={lectern}
-      position={{left: "30%", bottom:"37%"}}
+      position={{left: "30%", bottom:"38.8%"}}
       label="experience"
       onClick={openExperience}
     />
