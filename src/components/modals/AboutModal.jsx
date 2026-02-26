@@ -15,7 +15,7 @@ export default function AboutModal() {
       <div className="textPage">
         <p>Hi! My name is Jennifer Yan.</p>
         <p>I am a full stack developer studying computer science at UC Irvine.</p>
-        <p>I am most passionate about creating tech that </p>
+        <p>I am most passionate about creating tech that makes a difference. Currently, I am most interested in AI/ML in automotive/healthcare industries and cybersecurity.</p>
         <p>Outside of tech, I love artsy activities such as painting, scrapbooking, and crocheting.</p>
       </div>
     </div>

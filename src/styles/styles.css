@@ -112,3 +112,30 @@ body {
     rgb(255, 130, 210)
   );
 }
+
+.object-label {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: white;
+  font-family: "mc";
+
+  background: rgba(0,0,0,0.5);
+  padding: 10px 18px;
+  border-radius: 6px;
+
+  backdrop-filter: blur(6px);
+
+  letter-spacing: 0.15em;
+  font-size: 14px;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.object-label:not(:empty) {
+  opacity: 1;
+}
