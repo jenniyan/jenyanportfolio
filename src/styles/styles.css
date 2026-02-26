@@ -1,14 +1,14 @@
 /* In src/index.css or similar file */
 @font-face {
   font-family: 'mc'; /* Choose a name for your font */
-  src: url('./fonts/Minecraft.ttf') format('truetype'); /* Include other formats for compatibility */
+  src: url('../fonts/Minecraft.ttf') format('truetype'); /* Include other formats for compatibility */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'mc-regular'; /* Choose a name for your font */
-  src: url('./fonts/MinecraftRegular.otf') format('opentype'); /* Include other formats for compatibility */
+  src: url('../fonts/MinecraftRegular.otf') format('opentype'); /* Include other formats for compatibility */
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +29,7 @@ body {
 .room {
   position: relative;
   width: 900px;
-  margin: 100px;
+  /* margin: 100px; */
 }
 
 .room img {

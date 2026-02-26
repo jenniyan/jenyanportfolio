@@ -39,7 +39,7 @@ export default function ProjectsModal() {
   return (
     <div className="modal">
       <img src={book} className="book" alt="Book background" />
-      <button className="closeButton" onClick={closeModal}>
+      <button className="closeBookButton" onClick={closeModal}>
         X
       </button>
       <div className="page left">

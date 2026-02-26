@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles.css';
-import './modal.css'
+import './styles/styles.css';
+import './styles/bookModal.css'
+import './styles/pageModal.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

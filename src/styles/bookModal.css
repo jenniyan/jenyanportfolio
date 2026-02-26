@@ -29,7 +29,7 @@ button {
     margin: 1em 0;
 }
 
-.closeButton {
+.closeBookButton {
     position: absolute;
     cursor: pointer;
     right: 5%;

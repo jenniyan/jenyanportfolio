@@ -9,6 +9,7 @@ import Bed from "../objects/Bed"
 
 import ProjectsModal from "../modals/ProjectsModal"
 import ExperienceModal from "../modals/ExperienceModal"
+import ResumeModal from "../modals/ResumeModal"
 
 import { usePortfolioUI } from "../hooks/UsePortfolioUI"
 
@@ -23,13 +24,14 @@ export default function RoomScene() {
       <Lectern onClick={() => openModal("experiences")}/>
       <ArmorStand />
       <Stove />
-      <Painting />
+      <Painting onClick={() => openModal("resume")}/>
       <Koda />
       <Bookshelf onClick={() => openModal("projects")}/>
       <Bed />
 
       <ProjectsModal />
       <ExperienceModal />
+      <ResumeModal />
 
     </div>
   )
