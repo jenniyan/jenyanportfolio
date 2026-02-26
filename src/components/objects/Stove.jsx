@@ -5,7 +5,7 @@ export default function Stove({ openStove }) {
   return (
     <GameObject
       img={stove}
-      position={{left: "83%", bottom:"41.25%"}}
+      position={{left: "72.75%", bottom:"40.5%"}}
       label="stove"
       onClick={openStove}
     />

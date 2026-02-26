@@ -5,7 +5,7 @@ export default function Koda({ openKoda }) {
   return (
     <GameObject
       img={koda}
-      position={{left: "55.5%", bottom:"28.75%"}}
+      position={{left: "50.5%", bottom:"28.75%"}}
       width="12%"
       label="koda"
       onClick={openKoda}

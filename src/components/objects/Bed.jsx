@@ -5,7 +5,7 @@ export default function Bed({ openBed }) {
   return (
     <GameObject
       img={bed}
-      position={{left: "43.8%", bottom:"57.75%"}}
+      position={{left: "42%", bottom:"58.25%"}}
       label="bed"
       onClick={openBed}
     />

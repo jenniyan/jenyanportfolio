@@ -5,7 +5,7 @@ export default function ArmorStand({ onClick }) {
   return (
     <GameObject
       img={armor}
-      position={{left: "50.5%", bottom:"75.25%"}}
+      position={{left: "48.75%", bottom:"77%"}}
       label="skills"
       onClick={onClick}
     />
