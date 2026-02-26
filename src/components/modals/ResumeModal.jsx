@@ -2,7 +2,7 @@ import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import pageBg from "../../assets/page.png";
 import resumePDF from "../../assets/resume.pdf"
 
-const pdfUrl = "https://drive.google.com/file/d/1FdHV_cK4LnuSJB7qKW2FUEzMywO0BAq0/preview" 
+// const pdfUrl = "https://drive.google.com/file/d/1FdHV_cK4LnuSJB7qKW2FUEzMywO0BAq0/preview" 
 
 export default function ResumeModal() {
   const { activeModal, closeModal } = usePortfolioUI();

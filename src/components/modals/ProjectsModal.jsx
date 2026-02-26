@@ -3,6 +3,7 @@ import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
 import saucynatorCover from "../../assets/saucynator-cover.png";
 import portfolioCover from "../../assets/portfolio-cover.png";
+import mlCover from "../../assets/ml-cover.png";
 
 const projects = [
   {
@@ -15,7 +16,15 @@ const projects = [
     cover: saucynatorCover,
   },
   {
-    title: "This Portfolio!",
+    title: "Machine Learning for Pediatric Pneumonia from X-ray Detection",
+    description: "Research paper completed with 1-on-1 mentor guidance analyzing multiple machine learning models for classifying lung X-ray images for pneumonia. Using a dataset of healthy and pneumonia-diagnosed lungs, we trained and tested three models: a custom scikit-learn model, an OpenAI zero-shot classification model, and a specialized pretrained pneumonia detection model. The study compares their performance, accuracy, efficiency, and potential improvements.",
+    tech: "Python, Numpy, Matplotlib, Scikit-learn, TensorFlow",
+    demo: "https://docs.google.com/document/d/1lzkesxp3Uh44X8hECLNe2RMTWxz470mHqzMn6l8UUuo/edit?tab=t.0#heading=h.32d7h9xrbifb",
+    repo: "https://github.com/jjen-yan/machine_learning",
+    cover: mlCover
+  },
+  {
+    title: "Personal Portfolio (this!!!!)",
     description: "A simple web app with front-end features",
     tech: "React, HTML/CSS",
     demo: "https://www.google.com",
@@ -46,7 +55,7 @@ export default function ProjectsModal() {
         <p className="header">{project.title}</p>
         <a href={project.demo} target="_blank" rel="noopener noreferrer">
           {" "}
-          demo
+          demo/report
         </a>{" "}
         |{" "}
         <a href={project.repo} target="_blank" rel="noopener noreferrer">
