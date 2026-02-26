@@ -42,7 +42,9 @@ export default function RoomScene() {
         onMouseEnter={() => setHoverLabel("resume")}
         onMouseLeave={() => setHoverLabel("")}
       />
-      <Koda />
+      <Koda 
+      onMouseEnter={() => setHoverLabel("KODA")}
+        onMouseLeave={() => setHoverLabel("")}/>
       <Bookshelf
         onClick={() => openModal("projects")}
         onMouseEnter={() => setHoverLabel("projects")}

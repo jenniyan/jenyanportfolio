@@ -115,21 +115,21 @@ body {
 
 .object-label {
   position: fixed;
-  bottom: 30px;
+  bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
 
   color: white;
   font-family: "mc";
 
-  background: rgba(0,0,0,0.5);
+  background: rgba(243, 125, 209, 0.5);
   padding: 10px 18px;
   border-radius: 6px;
 
   backdrop-filter: blur(6px);
 
   letter-spacing: 0.15em;
-  font-size: 14px;
+  font-size: 18px;
 
   pointer-events: none;
   opacity: 0;
@@ -138,4 +138,35 @@ body {
 
 .object-label:not(:empty) {
   opacity: 1;
+}
+
+.contact-info {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-family: "mc";
+  padding: 10px 18px;
+  border-radius: 6px;
+  backdrop-filter: blur(6px);
+  letter-spacing: 0.15em;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+}
+
+.github-link {
+  margin-left: 8px;
+  color:rgb(255, 120, 206)
+}
+
+.linkedin-link {
+  margin-left: 8px;
+  color:rgb(255, 120, 206)
 }

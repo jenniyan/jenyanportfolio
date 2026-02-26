@@ -3,6 +3,8 @@ export default function GameObject({
   position,
   width,
   onClick,
+  onMouseEnter,
+  onMouseLeave,
   label
 }) {
   return (
@@ -10,6 +12,8 @@ export default function GameObject({
       className="game-object"
       style={{ ...position, width }}
       onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <img src={img} alt=""/>
     </div>

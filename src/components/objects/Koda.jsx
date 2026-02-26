@@ -1,14 +1,16 @@
 import GameObject from "../common/GameObject"
 import koda from "../../assets/koda.png"
 
-export default function Koda({ openKoda }) {
+export default function Koda({ onClick, onMouseEnter, onMouseLeave }) {
   return (
     <GameObject
       img={koda}
       position={{left: "50.5%", bottom:"28.75%"}}
       width="12%"
       label="koda"
-      onClick={openKoda}
+      onClick={onClick}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     />
   )
 }
