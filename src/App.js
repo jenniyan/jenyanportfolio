@@ -7,7 +7,7 @@ export default function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    const checkScreen = () => setIsSmallScreen(window.innerWidth <= 900);
+    const checkScreen = () => setIsSmallScreen(window.innerWidth <= 960);
     checkScreen(); // initial check
     window.addEventListener("resize", checkScreen);
     return () => window.removeEventListener("resize", checkScreen);

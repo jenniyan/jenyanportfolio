@@ -168,7 +168,7 @@ body {
 }
 
 /* responsive-warning.css */
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   .room-wrapper,
   .room-container,
   .game-object,
