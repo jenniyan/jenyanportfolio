@@ -184,13 +184,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     background-color: #130c25;
     color: white;
     font-family: "mc-regular";
     text-align: center;
-    padding: 20px;
+    padding: 5%;
     z-index: 9999;
     font-size: 1.2em;
   }
