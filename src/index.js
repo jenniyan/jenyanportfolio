@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './styles/styles.css';
 import './styles/bookModal.css'
 import './styles/pageModal.css'
+import './styles/jukebox.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
