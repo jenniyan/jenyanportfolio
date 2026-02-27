@@ -16,7 +16,7 @@
   mask-repeat: no-repeat;
   mask-size: 115%;
   mask-position: center;
-  
+
   animation: damageFlash 0.18s ease;
 }
 
@@ -27,7 +27,13 @@
 }
 
 @keyframes damageFlash {
-  0% { opacity: 0; }
-  40% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
