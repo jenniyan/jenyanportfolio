@@ -17,7 +17,6 @@ export default function App() {
       <div className="app">
         <PortfolioUIProvider>
           {isSmallScreen ? <ScreenWarning /> : <RoomScene />}
-        <RoomScene />
         </PortfolioUIProvider>
       </div>
   )
