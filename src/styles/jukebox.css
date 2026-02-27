@@ -12,21 +12,20 @@
   width: 60px;
   height: 60px;
   background: url('../assets/jukebox.png') no-repeat center/cover;
-  border: 2px solid #ff81d7;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(255, 129, 215, 0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: white;
   font-weight: bold;
 }
 
 .jukebox:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 14px rgba(255, 129, 215, 0.9);
+  animation: none;
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 14px rgb(255, 129, 215));
 }
 
 .jukebox.playing {
@@ -34,8 +33,12 @@
 }
 
 @keyframes glowPulse {
-  0% { box-shadow: 0 0 10px rgba(255, 129, 215, 0.6); }
-  100% { box-shadow: 0 0 20px rgba(255, 129, 215, 1); }
+  0% {
+    filter: drop-shadow(0 0 10px rgba(255, 129, 215, 0.6));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(255, 129, 215, 1));
+  }
 }
 
 .jukebox-label {

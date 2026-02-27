@@ -16,6 +16,7 @@ import armorStandSound from "../../assets/sounds/equip-armor.ogg";
 import paintingSound from "../../assets/sounds/painting.ogg";
 import bookshelfSound from "../../assets/sounds/bookshelf-pickup.ogg";
 import smokerSound from "../../assets/sounds/smoker.ogg";
+import avatarSound from "../../assets/sounds/crit.ogg"
 
 import ProjectsModal from "../modals/ProjectsModal";
 import ExperienceModal from "../modals/ExperienceModal";
@@ -31,7 +32,7 @@ export default function RoomScene() {
   const [hoverLabel, setHoverLabel] = useState("");
   const playSound = (audioFile) => {
     const audio = new Audio(audioFile);
-    audio.volume = 0.4;
+    audio.volume = 0.3;
     audio.play();
   };
 
@@ -81,7 +82,12 @@ export default function RoomScene() {
         onMouseLeave={() => setHoverLabel("")}
       />
       <Bed />
-      <Avatar onClick={() => openModal("about")} />
+      <Avatar onClick={() => {
+          playSound(avatarSound);
+          openModal("about");
+        }}
+        onMouseEnter={() => setHoverLabel("about me")}
+        onMouseLeave={() => setHoverLabel("")} />
 
       <ProjectsModal />
       <ExperienceModal />

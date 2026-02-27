@@ -4,6 +4,7 @@ import book from "../../assets/book.png";
 import saucynatorCover from "../../assets/saucynator-cover.png";
 import portfolioCover from "../../assets/portfolio-cover.png";
 import mlCover from "../../assets/ml-cover.png";
+import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const projects = [
     {
@@ -42,9 +43,25 @@ export default function ProjectsModal() {
 
   if (activeModal !== "projects") return null;
 
-  const nextPage = () =>
-    setPage((prev) => Math.min(prev + 1, projects.length - 1));
-  const prevPage = () => setPage((prev) => Math.max(prev - 1, 0));
+    const playPageFlip = () => {
+    const audio = new Audio(pageFlipSound);
+    audio.volume = 0.3; // adjust volume
+    audio.play();
+  };
+  
+  const nextPage = () => {
+      if (page < projects.length - 1) {
+        playPageFlip();
+        setPage((prev) => Math.min(prev + 1, projects.length - 1));
+      }
+    };
+  
+    const prevPage = () => {
+      if (page > 0) {
+        playPageFlip();
+        setPage((prev) => Math.max(prev - 1, 0));
+      }
+    };
 
   const project = projects[page];
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
+import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const skills = [
     {
@@ -31,9 +32,25 @@ export default function SkillsModal() {
 
   if (activeModal !== "skills") return null;
 
-  const nextPage = () =>
-    setPage((prev) => Math.min(prev + 1, skills.length - 1));
-  const prevPage = () => setPage((prev) => Math.max(prev - 1, 0));
+  const playPageFlip = () => {
+  const audio = new Audio(pageFlipSound);
+  audio.volume = 0.3;
+  audio.play();
+};
+
+const nextPage = () => {
+    if (page < skills.length - 1) {
+      playPageFlip();
+      setPage((prev) => Math.min(prev + 1, skills.length - 1));
+    }
+  };
+
+  const prevPage = () => {
+    if (page > 0) {
+      playPageFlip();
+      setPage((prev) => Math.max(prev - 1, 0));
+    }
+  };
 
   const skill = skills[page];
 

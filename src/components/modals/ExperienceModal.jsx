@@ -2,6 +2,7 @@ import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
 import clchcCover from "../../assets/clchc-cover.png";
+import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const experiences = [
   {
@@ -32,9 +33,25 @@ export default function ExperienceModal() {
 
   if (activeModal !== "experiences") return null;
 
-  const nextPage = () =>
-    setPage((prev) => Math.min(prev + 1, experiences.length - 1));
-  const prevPage = () => setPage((prev) => Math.max(prev - 1, 0));
+    const playPageFlip = () => {
+    const audio = new Audio(pageFlipSound);
+    audio.volume = 0.3;
+    audio.play();
+  };
+  
+  const nextPage = () => {
+      if (page < experiences.length - 1) {
+        playPageFlip();
+        setPage((prev) => Math.min(prev + 1, experiences.length - 1));
+      }
+    };
+  
+    const prevPage = () => {
+      if (page > 0) {
+        playPageFlip();
+        setPage((prev) => Math.max(prev - 1, 0));
+      }
+    };
 
   const experience = experiences[page];
 

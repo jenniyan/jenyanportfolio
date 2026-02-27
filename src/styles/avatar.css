@@ -1,0 +1,33 @@
+.object-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: rgba(255, 40, 40, 0.45);
+
+  -webkit-mask-image: url(../assets/avatar.png);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 115%;
+  -webkit-mask-position: center;
+
+  mask-image: url(../assets/avatar.png);
+  mask-repeat: no-repeat;
+  mask-size: 115%;
+  mask-position: center;
+  
+  animation: damageFlash 0.18s ease;
+}
+
+/* Minecraft damage flash */
+.overlay-damage {
+  background: rgba(255, 40, 40, 0.45);
+  animation: damageFlash 0.18s ease;
+}
+
+@keyframes damageFlash {
+  0% { opacity: 0; }
+  40% { opacity: 1; }
+  100% { opacity: 0; }
+}

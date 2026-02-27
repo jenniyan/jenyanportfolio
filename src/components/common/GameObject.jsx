@@ -5,17 +5,21 @@ export default function GameObject({
   onClick,
   onMouseEnter,
   onMouseLeave,
-  label
+  className="",
+  overlay = null,
 }) {
   return (
     <div
-      className="game-object"
+      className={`game-object ${className}`}
       style={{ ...position, width }}
       onClick={onClick}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <img src={img} alt=""/>
+      <div className="image-wrapper" style={{ position: "relative", display: "inline-block" }}>
+        <img src={img} alt="" />
+        {overlay && <div className={`object-overlay ${overlay}`} />}
+      </div>
     </div>
   )
 }
