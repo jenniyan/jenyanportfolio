@@ -17,6 +17,7 @@ import paintingSound from "../../assets/sounds/painting.ogg";
 import bookshelfSound from "../../assets/sounds/bookshelf-pickup.ogg";
 import smokerSound from "../../assets/sounds/smoker.ogg";
 import avatarSound from "../../assets/sounds/crit.ogg"
+import kodaSound from "../../assets/sounds/bark.ogg"
 
 import ProjectsModal from "../modals/ProjectsModal";
 import ExperienceModal from "../modals/ExperienceModal";
@@ -70,6 +71,8 @@ export default function RoomScene() {
         onMouseLeave={() => setHoverLabel("")}
       />
       <Koda
+      onClick={() => {
+          playSound(kodaSound)}}
         onMouseEnter={() => setHoverLabel("KODA")}
         onMouseLeave={() => setHoverLabel("")}
       />
