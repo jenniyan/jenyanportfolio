@@ -35,6 +35,15 @@ const projects = [
     repo: "https://github.com/jenniyan/machine_learning",
     cover: mlCover
   },
+  // {
+  //   title: "Celebrating Life Community Health Center",
+  //   time: "nov 2025 - may 2026",
+  //   description: ".",
+  //   tech: "Python, Numpy, Matplotlib, Scikit-learn, TensorFlow",
+  //   demo: ".",
+  //   repo: "https://github.com/ctc-uci/clchc",
+  //   cover: mlCover
+  // },
 ];
 
 export default function ProjectsModal() {

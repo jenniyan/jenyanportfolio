@@ -19,7 +19,7 @@ export default function Avatar({ onClick, onMouseEnter, onMouseLeave }) {
       onClick?.();
     }, 150);
 
-    if (hitCount + 1 >= 5) {
+    if (hitCount + 1 >= 4) {
       setMessage("stop hitting me :(");
       // hide message after 2 seconds
       setTimeout(() => setMessage(""), 2000);

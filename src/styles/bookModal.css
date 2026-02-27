@@ -29,6 +29,10 @@ button {
     margin: 1em 0;
 }
 
+.skillCover {
+    margin: 4em 0;
+}
+
 .closeBookButton {
     position: absolute;
     cursor: pointer;

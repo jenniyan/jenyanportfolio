@@ -2,6 +2,10 @@ import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
 import pageFlipSound from "../../assets/sounds/page-flip.ogg";
+import enchantmentTable from "../../assets/enchantment-table.png"
+import bookshelf from "../../assets/bookshelf-block.png"
+import web from "../../assets/cobweb.png"
+import tools from "../../assets/crafting-table.png"
 
 const skills = [
     {
@@ -12,7 +16,8 @@ const skills = [
       { name: "JavaScript", level: "Intermediate" },
       { name: "SQL", level: "Intermediate" },
       { name: "Java", level: "Familiar" },
-    ]
+    ],
+    cover: enchantmentTable,
   },
   {
     tech: "Python Libraries",
@@ -26,7 +31,8 @@ const skills = [
       { name: "Flask", level: "Familiar" },
       { name: "pytest", level: "Familiar" },
       { name: "sci-kit learn", level: "Familiar" }
-    ]
+    ],
+    cover: bookshelf,
   },
   {
     tech: "Web Development",
@@ -38,7 +44,8 @@ const skills = [
       { name: "Node.js", level: "Familiar" },
       { name: "Express", level: "Familiar" },
       { name: "Firebase", level: "Familiar" },
-    ]
+    ],
+    cover: web
   },
   {
     tech: "Developer Tools",
@@ -51,7 +58,8 @@ const skills = [
       { name: "npm / yarn", level: "Intermediate"},
       { name: "Docker", level: "Familiar" },
       { name: "Postman", level: "Familiar" }
-    ]
+    ],
+    cover: tools
   },
 ];
 
@@ -91,6 +99,11 @@ const nextPage = () => {
       </button>
       <div className="page left">
         <p className="header">{skill.tech}</p>
+        <img
+          src={skill.cover}
+          alt={`${skill.tech} cover`}
+          className="skillCover"
+        />
       </div>
       <div className="page right">
         <ul className="skillList">
