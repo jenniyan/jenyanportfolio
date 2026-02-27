@@ -5,7 +5,7 @@ export default function Stove({ onClick, onMouseEnter, onMouseLeave }) {
   return (
     <GameObject
       img={stove}
-      position={{left: "72.75%", bottom:"40.5%"}}
+      position={{left: "75.5%", bottom:"41%"}}
       label="stove"
       onClick={onClick}
       onMouseEnter={onMouseEnter}

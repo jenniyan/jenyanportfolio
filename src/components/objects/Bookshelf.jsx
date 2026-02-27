@@ -5,7 +5,7 @@ export default function Bookshelf({ onClick, onMouseEnter, onMouseLeave }) {
   return (
     <GameObject
       img={bookshelf}
-      position={{left: "17.25%", bottom:"50.75%"}}
+      position={{left: "18%", bottom:"50.75%"}}
       label="projects"
       onClick={onClick}
       onMouseEnter={onMouseEnter}

@@ -5,7 +5,7 @@ export default function Lectern({ onClick, onMouseEnter, onMouseLeave }) {
   return (
     <GameObject
       img={lectern}
-      position={{left: "31%", bottom:"38.5%"}}
+      position={{left: "32.25%", bottom:"38.5%"}}
       label="experience"
       onClick={onClick}
       onMouseEnter={onMouseEnter}

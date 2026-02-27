@@ -38,6 +38,7 @@ export default function RoomScene() {
   };
 
   return (
+    <div className="room-wrapper">
     <div className="room">
       <RoomBackground />
 
@@ -102,6 +103,7 @@ export default function RoomScene() {
       <Jukebox />
 
       <div className="object-label">{hoverLabel}</div>
+    </div>
     </div>
   );
 }
