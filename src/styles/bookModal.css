@@ -88,3 +88,22 @@ button {
     left: 72%;
     position: absolute;
 }
+
+.skillList {
+  list-style: none;
+  padding: 0;
+}
+
+.skillList li::before {
+  content: "▸ ";
+  color: pink;
+}
+
+.skillList li {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

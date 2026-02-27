@@ -5,23 +5,23 @@ import book from "../../assets/book.png";
 const skills = [
     {
     tech: "Languages",
-    list: "Python, Java, SQL, HTML/CSS, JavaScript"
+    list: ["Python", "Java", "SQL", "HTML/CSS", "JavaScript"]
   },
   {
     tech: "Python Libraries",
-    list: "NumPy, Pandas, Matplotlib, plot.ly, Flask, PyTorch, pytest"
+    list: ["NumPy", "Pandas", "Matplotlib", "plot.ly", "Flask", "PyTorch", "pytest"]
   },
   {
     tech: "Web Development",
-    list: "Frontend: HTML/CSS, JavaScript, React, CSS | Backend: PostgreSQL, Node.js, Express | User Authentication: Firebase"
+    list: ["Frontend: HTML/CSS, JavaScript, React, CSS", "Backend: PostgreSQL, Node.js, Express", "User Authentication: Firebase"]
   },
   {
     tech: "Developer Tools",
-    list: "Git, VS Code, GitHub, Docker, Postman"
+    list: ["Git", "VS Code", "GitHub", "Docker", "Postman"]
   },
   {
     tech: "AI/ML",
-    list: "sci-kit learn, PyTorch, OpenAI API, Hugging Face Transformers"
+    list: ["sci-kit learn", "PyTorch", "OpenAI API", "Hugging Face Transformers"]
   },
 ];
 
@@ -47,7 +47,11 @@ export default function SkillsModal() {
         <p className="header">{skill.tech}</p>
       </div>
       <div className="page right">
-        <p>{skill.list}</p>
+        <ul className="skillList">
+  {skill.list.map((item) => (
+    <li key={item}>{item}</li>
+  ))}
+</ul>
         <div className="controls">
           <button
             className="prevButton"

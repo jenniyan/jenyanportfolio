@@ -12,7 +12,7 @@ const projects = [
     description: "A simple web app with front-end features",
     tech: "React, HTML/CSS",
     demo: "https://www.google.com",
-    repo: "https://github.com/jjen-yan/jenyanportfolio",
+    repo: "https://github.com/jenniyan/jenyanportfolio",
     cover: portfolioCover,
   },
   {
@@ -22,7 +22,7 @@ const projects = [
       "Simple, fun chatbot built with OpenAI’s GPT-3.5 that suggests recipes based on ingredients users already have. Created as an exploratory project to learn prompt design, long-term memory, and experimenting with how we can make cooking feel more approachable for beginners.",
     tech: "Python, Flask, Google Colab, OpenAI API, HTML/CSS/JS front-end",
     demo: "https://www.loom.com/share/1c8b9a0e7c5b4d9f8e1c3a2b6f4e5a6",
-    repo: "https://github.com/jjen-yan/saucynator",
+    repo: "https://github.com/jenniyan/saucynator",
     cover: saucynatorCover,
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     description: "Research paper completed with 1-on-1 mentor guidance analyzing multiple machine learning models for classifying lung X-ray images for pneumonia. Using a dataset of healthy and pneumonia-diagnosed lungs, we trained and tested three models: a custom scikit-learn model, an OpenAI zero-shot classification model, and a specialized pretrained pneumonia detection model. The study compares their performance, accuracy, efficiency, and potential improvements.",
     tech: "Python, Numpy, Matplotlib, Scikit-learn, TensorFlow",
     demo: "https://docs.google.com/document/d/1lzkesxp3Uh44X8hECLNe2RMTWxz470mHqzMn6l8UUuo/edit?tab=t.0#heading=h.32d7h9xrbifb",
-    repo: "https://github.com/jjen-yan/machine_learning",
+    repo: "https://github.com/jenniyan/machine_learning",
     cover: mlCover
   },
 ];
