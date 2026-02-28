@@ -31,7 +31,7 @@ export default function Contact() {
         <p className="contact-link">
           <img className="icon" src={linkedinIcon} alt="LinkedIn Icon" />
           <a
-            href="https://www.linkedin.com/in/jennifer--yan/"
+            href="https://www.linkedin.com/in/jenniyan/"
             target="_blank"
             rel="noopener noreferrer"
             className="linkedin-link"
