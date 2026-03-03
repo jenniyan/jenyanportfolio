@@ -1,12 +1,23 @@
 import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
+import envoyCover from "../../assets/envoy-cover.png"
 import saucynatorCover from "../../assets/saucynator-cover.png";
 import portfolioCover from "../../assets/portfolio-cover.png";
 import mlCover from "../../assets/ml-cover.png";
 import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const projects = [
+  {
+    title: "Envoy: AI Postgres Client",
+    time: "mar 2026 (submitted to irvinehacks)",
+    description: "Envoy is an AI powered Postgres client that lets you query any PostgresSQL database using natural language. Type a query in natural language and Envoy translates it to SQL, shows you exactly which rows will change, tells you the risk level, and asks for your approval before a single row is touched.",
+    tech: "Typescript, Next.js, Anthropic Claude API, Postgres Model Context Protocol, shadcn, Tailwind CSS, AI SDK by Vercel",
+    demo: "https://youtu.be/aV2i10SZUNM",
+    repo: "https://github.com/Satchel05/IrvineHacks2026",
+    devpost: "https://devpost.com/software/envoy-ai-postgres-client",
+    cover: envoyCover,
+  },
     {
     title: "Personal Portfolio",
     time: "dec 2025 - present",
@@ -91,6 +102,14 @@ export default function ProjectsModal() {
         <a href={project.repo} target="_blank" rel="noopener noreferrer">
           repo
         </a>
+        {project.devpost && (
+          <>
+            {" | "}
+            <a href={project.devpost} target="_blank" rel="noopener noreferrer">
+              devpost
+            </a>
+          </>
+        )}
         <img
           src={project.cover}
           alt={`${project.title} cover`}
