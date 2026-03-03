@@ -15,6 +15,7 @@ const skills = [
       { name: "HTML/CSS", level: "Intermediate" },
       { name: "JavaScript", level: "Intermediate" },
       { name: "SQL", level: "Intermediate" },
+      { name: "Typescript", level: "Familiar" },
       { name: "Java", level: "Familiar" },
     ],
     cover: enchantmentTable,
@@ -23,7 +24,7 @@ const skills = [
     tech: "Web Development",
     list: [
       { name: "HTML/CSS", level: "Advanced" },
-      { name: "Javascript", level: "Tailwind" },
+      { name: "Tailwing", level: "Intermediate" },
       { name: "Javascript", level: "Intermediate" },
       { name: "React", level: "Intermediate" },
       { name: "Typescript", level: "Familiar" },
@@ -63,6 +64,18 @@ const skills = [
     ],
     cover: bookshelf,
   },
+  // {
+  //   tech: "AI/ML tools",
+  //   list: [
+  //     { name: "Anthropic Claude API", level: "Advanced" },
+  //     { name: "Postgres Model Context Protocol", level: "Intermediate"},
+  //     { name: "Matplotlib", level: "Intermediate" },
+  //     { name: "PyTorch", level: "Familiar" },
+  //     { name: "Hugging Face", level: "Familiar" },
+  //     { name: "sci-kit learn", level: "Familiar" }
+  //   ],
+  //   cover: bookshelf,
+  // },
 ];
 
 export default function SkillsModal() {
