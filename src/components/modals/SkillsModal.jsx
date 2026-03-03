@@ -20,26 +20,13 @@ const skills = [
     cover: enchantmentTable,
   },
   {
-    tech: "Python Libraries",
-    list: [
-      { name: "Numpy", level: "Advanced" },
-      { name: "urllib", level: "Intermediate"},
-      { name: "Matplotlib", level: "Intermediate" },
-      { name: "Pandas", level: "Familiar" },
-      { name: "plot.ly", level: "Familiar" },
-      { name: "PyTorch", level: "Familiar" },
-      { name: "Flask", level: "Familiar" },
-      { name: "pytest", level: "Familiar" },
-      { name: "sci-kit learn", level: "Familiar" }
-    ],
-    cover: bookshelf,
-  },
-  {
     tech: "Web Development",
     list: [
       { name: "HTML/CSS", level: "Advanced" },
+      { name: "Javascript", level: "Tailwind" },
       { name: "Javascript", level: "Intermediate" },
       { name: "React", level: "Intermediate" },
+      { name: "Typescript", level: "Familiar" },
       { name: "PostgreSQL", level: "Familiar" },
       { name: "Node.js", level: "Familiar" },
       { name: "Express", level: "Familiar" },
@@ -60,6 +47,21 @@ const skills = [
       { name: "Postman", level: "Familiar" }
     ],
     cover: tools
+  },
+  {
+    tech: "Python Libraries",
+    list: [
+      { name: "Numpy", level: "Advanced" },
+      { name: "urllib", level: "Intermediate"},
+      { name: "Matplotlib", level: "Intermediate" },
+      { name: "Pandas", level: "Familiar" },
+      { name: "plot.ly", level: "Familiar" },
+      { name: "PyTorch", level: "Familiar" },
+      { name: "Flask", level: "Familiar" },
+      { name: "pytest", level: "Familiar" },
+      { name: "sci-kit learn", level: "Familiar" }
+    ],
+    cover: bookshelf,
   },
 ];
 
