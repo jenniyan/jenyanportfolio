@@ -124,7 +124,8 @@ const nextPage = () => {
         <ul className="skillList">
   {skill.list.map((item) => (
     <li key={item.name}>
-      {item.name} <span className={`tag ${item.level.toLowerCase()}`}>{item.level}</span>
+      {item.name} 
+      {/* <span className={`tag ${item.level.toLowerCase()}`}>{item.level}</span> */}
     </li>
   ))}
 </ul>
