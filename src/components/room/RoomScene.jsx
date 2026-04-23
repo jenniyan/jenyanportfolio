@@ -10,6 +10,7 @@ import Bookshelf from "../objects/Bookshelf";
 import Bed from "../objects/Bed";
 import Avatar from "../objects/Avatar";
 import Jukebox from "../objects/Jukebox";
+import RecruiterToggle from "../objects/RecruiterToggle";
 
 import lecternSound from "../../assets/sounds/lectern.ogg";
 import armorStandSound from "../../assets/sounds/equip-armor.ogg";
@@ -101,6 +102,7 @@ export default function RoomScene() {
 
       <Contact />
       <Jukebox />
+      <RecruiterToggle />
 
       <div className="object-label">{hoverLabel}</div>
     </div>

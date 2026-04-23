@@ -1,0 +1,222 @@
+.rv-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(8, 4, 20, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+}
+
+.rv-panel {
+  width: min(1200px, 96vw);
+  max-height: 90vh;
+  background: #1a1030;
+  border: 3px solid #4a3478;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── header ── */
+.rv-header {
+  background: #2d1f52;
+  border-bottom: 2px solid #4a3478;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.rv-header-title {
+  color: #ddd0f5;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  flex: 1;
+}
+
+.rv-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.rv-nav-btn {
+  background: transparent;
+  border: 1px solid #4a3478;
+  color: #9980c8;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+  letter-spacing: 0.04em;
+}
+
+.rv-nav-btn.active {
+  background: #4a3478;
+  color: #f0e6ff;
+}
+
+.rv-close-btn {
+  background: transparent;
+  border: 1px solid #4a3478;
+  color: #9980c8;
+  font-size: 16px;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+}
+
+/* ── body ── */
+.rv-body {
+  overflow-y: auto;
+  padding: 24px 28px;
+  flex: 1;
+}
+
+.rv-section {
+  margin-bottom: 36px;
+}
+
+.rv-label {
+  font-size: 16px;
+  color: #9980c8;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px 0;
+}
+
+/* ── about ── */
+.rv-about-card {
+  background: #211438;
+  border: 1px solid #3d2870;
+  border-left: 3px solid #ff4da6;
+  padding: 16px 20px;
+}
+
+.rv-about-name {
+  font-size: 16px;
+  color: #f0e6ff;
+  margin: 0 0 4px 0;
+}
+
+.rv-about-role {
+  font-size: 12px;
+  color: #9980c8;
+  margin: 0 0 14px 0;
+  letter-spacing: 0.06em;
+}
+
+.rv-bio {
+  font-size: 12px;
+  color: #ddd0f5;
+  line-height: 2;
+  margin: 0 0 16px 0;
+}
+
+.rv-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ── cards ── */
+.rv-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rv-card {
+  background: #211438;
+  border: 1px solid #3d2870;
+  border-left: 3px solid #4a3478;
+  padding: 14px 18px;
+}
+
+.rv-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.rv-card-title {
+  font-size: 18px;
+  color: #ddd0f5;
+  margin: 0 0 4px 0;
+}
+
+.rv-card-sub {
+  font-size: 16px;
+  color: #9980c8;
+  margin: 0;
+}
+
+.rv-card-body {
+  font-size: 14px;
+  color: #ddd0f5;
+  line-height: 1.9;
+  margin: 10px 0 0 0;
+}
+
+/* ── grids ── */
+.rv-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+
+.rv-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.rv-skill-cat-label {
+  font-size: 12px;
+  color: #ddd0f5;
+  margin: 0 0 6px 0;
+}
+
+/* ── chips & links ── */
+.rv-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.rv-chip {
+  font-size: 12px;
+  background: #2d1f52;
+  color: #9980c8;
+  padding: 3px 8px;
+  border: 1px solid #3d2870;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+}
+
+.rv-pink-link {
+  font-size: 12px;
+  color: #ff4da6;
+  border: 1px solid #ff4da6;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: inline-block;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+}
+
+.rv-muted-link {
+  font-size: 12px;
+  color: #9980c8;
+  text-decoration: none;
+  white-space: nowrap;
+  /* font-family: 'Minecraft', 'Courier New', monospace; */
+}
+
+.rv-link-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
