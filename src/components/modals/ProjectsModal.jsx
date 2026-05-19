@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
+import fairandCover from "../../assets/fairand-cover.png";
 import envoyCover from "../../assets/envoy-cover.png"
 import saucynatorCover from "../../assets/saucynator-cover.png";
 import portfolioCover from "../../assets/portfolio-cover.png";
@@ -9,9 +10,19 @@ import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const projects = [
   {
+    title: "Fair&",
+    time: "may 2026 (submitted to venushacks)",
+    description: "Women are disproportionately assigned NPT's in the workplace. Fair& is an AI-powered Slack tool that detects and tracks non-promotable tasks (NPTs) in workplace conversations to uncover invisible labor imbalances. It analyzes messages in real time and visualizes workload equity through interactive analytics dashboards.",
+    tech: "JavaScript, React, Node.js, Express, Slack Bolt SDK, Anthropic Claude API, Supabase",
+    demo: "",
+    repo: "https://github.com/jenniyan/VenusHacks2026",
+    devpost: "https://devpost.com/software/fair-le4gy0",
+    cover: fairandCover
+  },
+  {
     title: "Envoy: AI Postgres Client",
     time: "mar 2026 (submitted to irvinehacks)",
-    description: "Envoy is an AI powered Postgres client that lets you query any PostgresSQL database using natural language. Type a query in natural language and Envoy translates it to SQL, shows you exactly which rows will change, tells you the risk level, and asks for your approval before a single row is touched.",
+    description: "Envoy is an AI-powered Postgres client that lets you query any PostgresSQL database using natural language. Type a query in natural language and Envoy translates it to SQL, shows you exactly which rows will change, tells you the risk level, and asks for your approval before a single row is touched.",
     tech: "Typescript, Next.js, Anthropic Claude API, Postgres Model Context Protocol, shadcn, Tailwind CSS, AI SDK by Vercel",
     demo: "https://youtu.be/aV2i10SZUNM",
     repo: "https://github.com/Satchel05/IrvineHacks2026",
