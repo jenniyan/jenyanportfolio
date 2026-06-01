@@ -2,11 +2,22 @@ import { useState } from "react";
 import { usePortfolioUI } from "../hooks/UsePortfolioUI";
 import book from "../../assets/book.png";
 import clchcCover from "../../assets/clchc-cover.png";
+import avisionCover from "../../assets/avision-cover.png";
 import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const experiences = [
   {
-    title: "Tech Lead Shadow",
+    title: "Full Stack Developer",
+    company: "Avision",
+    date: "April 2026 - Present",
+    description:
+      "Rebuilding a legacy static HTML/HTTP website from scratch as a full-stack TypeScript application using React 19, React Router, Tailwind CSS, Express, and PostgreSQL (Neon), with HTTPS and client-side routing replacing hand-coded .html pages",
+    tech: "Front-end: React, Tailwind CSS | Backend: Node.js, Express, PostgreSQL (Neon)",
+    repo: "https://github.com/avisionlabs/website",
+    cover: avisionCover,
+  },
+  {
+    title: "Tech Lead Intern",
     company: "Commit the Change",
     date: "January 2026 - March 2026",
     description:
@@ -18,7 +29,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company: "Commit the Change",
-    date: "October 2025 - Present",
+    date: "October 2025 - June 2026",
     description:
       "Building a centralized appointment management platform for non-profit Celebrating Life Community Health Center (CLCHC), which includes daily appointment quota creation, live quota-progress tracking, version logs, and tiered permission portals. CLCHC provides affordable healthcare to 22,000+ patients in Orange County.",
     tech: "Front-end: React, Chakra UI, HTML/CSS | Backend: Node.js, Express, PostgreSQL | User Authentication: Firebase",
