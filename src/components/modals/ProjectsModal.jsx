@@ -6,16 +6,26 @@ import envoyCover from "../../assets/envoy-cover.png"
 import saucynatorCover from "../../assets/saucynator-cover.png";
 import portfolioCover from "../../assets/portfolio-cover.png";
 import mlCover from "../../assets/ml-cover.png";
+import kinnectCover from "../../assets/kinnect-cover.png";
 import pageFlipSound from "../../assets/sounds/page-flip.ogg";
 
 const projects = [
+  {
+    title: "Kinnect",
+    time: "jan 2026 - june 2026",
+    description: "Kinnect is a location-based social prototype that helps people discover and connect with nearby users using tags, live video, and chat. It’s designed to make meeting and talking with new people feel easy and natural.\n\nWon best project at UCI's IN4MATX43 Spring26 cohort (293 enrolled students and ~60 projects).",
+    tech: "React Native, Expo, Node.js, Express, Redis",
+    demo: "https://www.youtube.com/watch?v=w8Q-sfP9mt8",
+    repo: "https://github.com/jenniyan/kinnect",
+    cover: kinnectCover
+  },
   {
     title: "Fair&",
     time: "may 2026 (submitted to venushacks)",
     description: "Women are disproportionately assigned NPT's in the workplace. Fair& is an AI-powered Slack tool that detects and tracks non-promotable tasks (NPTs) in workplace conversations to uncover invisible labor imbalances. It analyzes messages in real time and visualizes workload equity through interactive analytics dashboards.",
     tech: "JavaScript, React, Node.js, Express, Slack Bolt SDK, Anthropic Claude API, Supabase",
     demo: "",
-    repo: "https://github.com/jenniyan/VenusHacks2026",
+    repo: "https://github.com/jenniyan/fairand",
     devpost: "https://devpost.com/software/fair-le4gy0",
     cover: fairandCover
   },
@@ -128,10 +138,14 @@ export default function ProjectsModal() {
         />
       </div>
       <div className="page right">
-        <p>{project.description}</p>
+        <div className="description">
+          {project.description.split("\n").map((line, i) => (
+            <p key={i}>{line}</p>
+          ))}
+        </div>
         <p> --- </p>
         <p>
-          <strong>Tech Used:</strong> <p>{project.tech}</p>
+          <strong>Tech Used:</strong> <span> {project.tech}</span>
         </p>
         <div className="controls">
           <button
